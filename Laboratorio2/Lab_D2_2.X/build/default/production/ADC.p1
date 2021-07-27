@@ -22,38 +22,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1276
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1276: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x01F)));
 [v _ADCON0bits `VS44 ~T0 @X0 0 e@31 ]
-"2977
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2977: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
-[v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
-"3393
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3393:     struct {
-[s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S133 . ANS0 ANS1 ANS2 ANS3 ANS4 ANS5 ANS6 ANS7 ]
-"3392
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3392: typedef union {
-[u S132 `S133 1 ]
-[n S132 . . ]
-"3404
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3404: extern volatile ANSELbits_t ANSELbits __attribute__((address(0x188)));
-[v _ANSELbits `VS132 ~T0 @X0 0 e@392 ]
-"3455
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3455:     struct {
-[s S135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S135 . ANS8 ANS9 ANS10 ANS11 ANS12 ANS13 ]
-"3454
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3454: typedef union {
-[u S134 `S135 1 ]
-[n S134 . . ]
-"3464
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3464: extern volatile ANSELHbits_t ANSELHbits __attribute__((address(0x189)));
-[v _ANSELHbits `VS134 ~T0 @X0 0 e@393 ]
 [v F1256 `(v ~T0 @X0 1 tf1`ul ]
 "92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\pic.h
 [v __delay `JF1256 ~T0 @X0 0 e ]
 [p i __delay ]
-"1238 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1238: extern volatile unsigned char ADRESH __attribute__((address(0x01E)));
-[v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
+"2983 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2983:     struct {
+[s S116 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S116 . . VCFG0 VCFG1 . ADFM ]
+"2982
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2982: typedef union {
+[u S115 `S116 1 ]
+[n S115 . . ]
+"2991
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2991: extern volatile ADCON1bits_t ADCON1bits __attribute__((address(0x09F)));
+[v _ADCON1bits `VS115 ~T0 @X0 0 e@159 ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 54: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -288,258 +271,154 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"7 ADC.c
-[; ;ADC.c: 7: uint8_t configADC(uint8_t ch) {
-[v _configADC `(uc ~T0 @X0 1 ef1`uc ]
+"11 ./ADC.h
+[p x FOSC  =  INTRC_NOCLKOUT ]
+"14 ADC.c
+[; ;ADC.c: 14: void config_ADC(char frec) {
+[v _config_ADC `(v ~T0 @X0 1 ef1`uc ]
 {
-[e :U _configADC ]
-[v _ch `uc ~T0 @X0 1 r1 ]
+[e :U _config_ADC ]
+[v _frec `uc ~T0 @X0 1 r1 ]
 [f ]
-"8
-[; ;ADC.c: 8:     ADCON0bits.ADCS = 1;
-[e = . . _ADCON0bits 0 3 -> -> 1 `i `uc ]
-"9
-[; ;ADC.c: 9:     ADCON1 = 0;
-[e = _ADCON1 -> -> 0 `i `uc ]
-"11
-[; ;ADC.c: 11:     switch (ch) {
+"15
+[; ;ADC.c: 15:     switch(frec){
 [e $U 140  ]
 {
-"12
-[; ;ADC.c: 12:         case 0:
-[e :U 141 ]
-"13
-[; ;ADC.c: 13:             ANSELbits.ANS0 = 1;
-[e = . . _ANSELbits 0 0 -> -> 1 `i `uc ]
-"14
-[; ;ADC.c: 14:             ADCON0bits.CHS = 0;
-[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
-"15
-[; ;ADC.c: 15:             break;
-[e $U 139  ]
 "16
-[; ;ADC.c: 16:         case 1:
-[e :U 142 ]
+[; ;ADC.c: 16:         case 0:
+[e :U 141 ]
 "17
-[; ;ADC.c: 17:             ANSELbits.ANS1=1;
-[e = . . _ANSELbits 0 1 -> -> 1 `i `uc ]
+[; ;ADC.c: 17:             ADCON0bits.CHS = 0;
+[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
 "18
-[; ;ADC.c: 18:             ADCON0bits.CHS=1;
-[e = . . _ADCON0bits 0 2 -> -> 1 `i `uc ]
-"19
-[; ;ADC.c: 19:             break;
-[e $U 139  ]
+[; ;ADC.c: 18:             _delay((unsigned long)((100)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "20
-[; ;ADC.c: 20:         case 2:
-[e :U 143 ]
+[; ;ADC.c: 20:             ADCON0bits.ADCS0 = 0;
+[e = . . _ADCON0bits 1 6 -> -> 0 `i `uc ]
 "21
-[; ;ADC.c: 21:             ANSELbits.ANS2=1;
-[e = . . _ANSELbits 0 2 -> -> 1 `i `uc ]
+[; ;ADC.c: 21:             ADCON0bits.ADCS1 = 0;
+[e = . . _ADCON0bits 1 7 -> -> 0 `i `uc ]
 "22
-[; ;ADC.c: 22:             ADCON0bits.CHS=2;
-[e = . . _ADCON0bits 0 2 -> -> 2 `i `uc ]
+[; ;ADC.c: 22:             ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
 "23
-[; ;ADC.c: 23:             break;
-[e $U 139  ]
+[; ;ADC.c: 23:             ADCON1bits.ADFM = 0;
+[e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
 "24
-[; ;ADC.c: 24:         case 3:
-[e :U 144 ]
+[; ;ADC.c: 24:             ADCON1bits.VCFG1 = 0;
+[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
 "25
-[; ;ADC.c: 25:             ANSELbits.ANS3=1;
-[e = . . _ANSELbits 0 3 -> -> 1 `i `uc ]
+[; ;ADC.c: 25:             ADCON1bits.VCFG0 = 0;
+[e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
 "26
-[; ;ADC.c: 26:             ADCON0bits.CHS=3;
-[e = . . _ADCON0bits 0 2 -> -> 3 `i `uc ]
+[; ;ADC.c: 26:             break;
+[e $U 139  ]
 "27
-[; ;ADC.c: 27:             break;
-[e $U 139  ]
+[; ;ADC.c: 27:         case 1:
+[e :U 142 ]
 "28
-[; ;ADC.c: 28:         case 4:
-[e :U 145 ]
+[; ;ADC.c: 28:             ADCON0bits.CHS = 0;
+[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
 "29
-[; ;ADC.c: 29:             ANSELbits.ANS4=1;
-[e = . . _ANSELbits 0 4 -> -> 1 `i `uc ]
-"30
-[; ;ADC.c: 30:             ADCON0bits.CHS=4;
-[e = . . _ADCON0bits 0 2 -> -> 4 `i `uc ]
+[; ;ADC.c: 29:             _delay((unsigned long)((100)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "31
-[; ;ADC.c: 31:             break;
-[e $U 139  ]
+[; ;ADC.c: 31:             ADCON0bits.ADCS0 = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
 "32
-[; ;ADC.c: 32:         case 5:
-[e :U 146 ]
+[; ;ADC.c: 32:             ADCON0bits.ADCS1 = 0;
+[e = . . _ADCON0bits 1 7 -> -> 0 `i `uc ]
 "33
-[; ;ADC.c: 33:             ANSELbits.ANS5=1;
-[e = . . _ANSELbits 0 5 -> -> 1 `i `uc ]
+[; ;ADC.c: 33:             ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
 "34
-[; ;ADC.c: 34:             ADCON0bits.CHS=5;
-[e = . . _ADCON0bits 0 2 -> -> 5 `i `uc ]
+[; ;ADC.c: 34:             ADCON1bits.ADFM = 0;
+[e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
 "35
-[; ;ADC.c: 35:             break;
-[e $U 139  ]
+[; ;ADC.c: 35:             ADCON1bits.VCFG1 = 0;
+[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
 "36
-[; ;ADC.c: 36:         case 6:
-[e :U 147 ]
+[; ;ADC.c: 36:             ADCON1bits.VCFG0 = 0;
+[e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
 "37
-[; ;ADC.c: 37:             ANSELbits.ANS6=1;
-[e = . . _ANSELbits 0 6 -> -> 1 `i `uc ]
+[; ;ADC.c: 37:             break;
+[e $U 139  ]
 "38
-[; ;ADC.c: 38:             ADCON0bits.CHS=6;
-[e = . . _ADCON0bits 0 2 -> -> 6 `i `uc ]
+[; ;ADC.c: 38:         case 2:
+[e :U 143 ]
 "39
-[; ;ADC.c: 39:             break;
-[e $U 139  ]
+[; ;ADC.c: 39:             ADCON0bits.CHS = 0;
+[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
 "40
-[; ;ADC.c: 40:         case 7:
-[e :U 148 ]
-"41
-[; ;ADC.c: 41:             ANSELbits.ANS7=1;
-[e = . . _ANSELbits 0 7 -> -> 1 `i `uc ]
+[; ;ADC.c: 40:             _delay((unsigned long)((100)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "42
-[; ;ADC.c: 42:             ADCON0bits.CHS=7;
-[e = . . _ADCON0bits 0 2 -> -> 7 `i `uc ]
+[; ;ADC.c: 42:             ADCON0bits.ADCS0 = 0;
+[e = . . _ADCON0bits 1 6 -> -> 0 `i `uc ]
 "43
-[; ;ADC.c: 43:             break;
-[e $U 139  ]
+[; ;ADC.c: 43:             ADCON0bits.ADCS1 = 1;
+[e = . . _ADCON0bits 1 7 -> -> 1 `i `uc ]
 "44
-[; ;ADC.c: 44:         case 8:
-[e :U 149 ]
+[; ;ADC.c: 44:             ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
 "45
-[; ;ADC.c: 45:             ANSELHbits.ANS8=1;
-[e = . . _ANSELHbits 0 0 -> -> 1 `i `uc ]
+[; ;ADC.c: 45:             ADCON1bits.ADFM = 0;
+[e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
 "46
-[; ;ADC.c: 46:             ADCON0bits.CHS=8;
-[e = . . _ADCON0bits 0 2 -> -> 8 `i `uc ]
+[; ;ADC.c: 46:             ADCON1bits.VCFG1 = 0;
+[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
 "47
-[; ;ADC.c: 47:             break;
-[e $U 139  ]
+[; ;ADC.c: 47:             ADCON1bits.VCFG0 = 0;
+[e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
 "48
-[; ;ADC.c: 48:         case 9:
-[e :U 150 ]
+[; ;ADC.c: 48:             break;
+[e $U 139  ]
 "49
-[; ;ADC.c: 49:             ANSELHbits.ANS9=1;
-[e = . . _ANSELHbits 0 1 -> -> 1 `i `uc ]
+[; ;ADC.c: 49:         case 3:
+[e :U 144 ]
 "50
-[; ;ADC.c: 50:             ADCON0bits.CHS=9;
-[e = . . _ADCON0bits 0 2 -> -> 9 `i `uc ]
+[; ;ADC.c: 50:             ADCON0bits.CHS = 0;
+[e = . . _ADCON0bits 0 2 -> -> 0 `i `uc ]
 "51
-[; ;ADC.c: 51:             break;
-[e $U 139  ]
-"52
-[; ;ADC.c: 52:         case 10:
-[e :U 151 ]
+[; ;ADC.c: 51:             _delay((unsigned long)((100)*(4000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 "53
-[; ;ADC.c: 53:             ANSELHbits.ANS10=1;
-[e = . . _ANSELHbits 0 2 -> -> 1 `i `uc ]
+[; ;ADC.c: 53:             ADCON0bits.ADCS0 = 1;
+[e = . . _ADCON0bits 1 6 -> -> 1 `i `uc ]
 "54
-[; ;ADC.c: 54:             ADCON0bits.CHS=10;
-[e = . . _ADCON0bits 0 2 -> -> 10 `i `uc ]
+[; ;ADC.c: 54:             ADCON0bits.ADCS1 = 1;
+[e = . . _ADCON0bits 1 7 -> -> 1 `i `uc ]
 "55
-[; ;ADC.c: 55:             break;
-[e $U 139  ]
+[; ;ADC.c: 55:             ADCON0bits.ADON = 1;
+[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
 "56
-[; ;ADC.c: 56:         case 11:
-[e :U 152 ]
+[; ;ADC.c: 56:             ADCON1bits.ADFM = 0;
+[e = . . _ADCON1bits 0 4 -> -> 0 `i `uc ]
 "57
-[; ;ADC.c: 57:             ANSELHbits.ANS11=1;
-[e = . . _ANSELHbits 0 3 -> -> 1 `i `uc ]
+[; ;ADC.c: 57:             ADCON1bits.VCFG1 = 0;
+[e = . . _ADCON1bits 0 2 -> -> 0 `i `uc ]
 "58
-[; ;ADC.c: 58:             ADCON0bits.CHS=11;
-[e = . . _ADCON0bits 0 2 -> -> 11 `i `uc ]
+[; ;ADC.c: 58:             ADCON1bits.VCFG0 = 0;
+[e = . . _ADCON1bits 0 1 -> -> 0 `i `uc ]
 "59
 [; ;ADC.c: 59:             break;
 [e $U 139  ]
 "60
-[; ;ADC.c: 60:         case 12:
-[e :U 153 ]
-"61
-[; ;ADC.c: 61:             ANSELHbits.ANS12=1;
-[e = . . _ANSELHbits 0 4 -> -> 1 `i `uc ]
-"62
-[; ;ADC.c: 62:             ADCON0bits.CHS=12;
-[e = . . _ADCON0bits 0 2 -> -> 12 `i `uc ]
-"63
-[; ;ADC.c: 63:             break;
-[e $U 139  ]
-"64
-[; ;ADC.c: 64:         case 13:
-[e :U 154 ]
-"65
-[; ;ADC.c: 65:             ANSELHbits.ANS13=1;
-[e = . . _ANSELHbits 0 5 -> -> 1 `i `uc ]
-"66
-[; ;ADC.c: 66:             ADCON0bits.CHS=13;
-[e = . . _ADCON0bits 0 2 -> -> 13 `i `uc ]
-"67
-[; ;ADC.c: 67:             break;
-[e $U 139  ]
-"68
-[; ;ADC.c: 68:         default:
-[e :U 155 ]
-"69
-[; ;ADC.c: 69:             return 0;
-[e ) -> -> 0 `i `uc ]
-[e $UE 138  ]
-"70
-[; ;ADC.c: 70:     }
+[; ;ADC.c: 60:     }
 }
 [e $U 139  ]
 [e :U 140 ]
-[e [\ -> _ch `i , $ -> 0 `i 141
+[e [\ -> _frec `i , $ -> 0 `i 141
  , $ -> 1 `i 142
  , $ -> 2 `i 143
  , $ -> 3 `i 144
- , $ -> 4 `i 145
- , $ -> 5 `i 146
- , $ -> 6 `i 147
- , $ -> 7 `i 148
- , $ -> 8 `i 149
- , $ -> 9 `i 150
- , $ -> 10 `i 151
- , $ -> 11 `i 152
- , $ -> 12 `i 153
- , $ -> 13 `i 154
- 155 ]
+ 139 ]
 [e :U 139 ]
-"72
-[; ;ADC.c: 72:     ADCON0bits.ADON = 1;
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"73
-[; ;ADC.c: 73:     _delay((unsigned long)((0.25)*(4000000/4000.0)));
-[e ( __delay (1 -> * .0.25 / -> -> 4000000 `l `d .4000.0 `ul ]
-"74
-[; ;ADC.c: 74:     ADCON0bits.GO = 1;
-[e = . . _ADCON0bits 1 1 -> -> 1 `i `uc ]
-"76
-[; ;ADC.c: 76:     resul:
-[e :U 156 ]
-"77
-[; ;ADC.c: 77:     if (ADCON0bits.GO_DONE == 1){
-[e $ ! == -> . . _ADCON0bits 3 1 `i -> 1 `i 157  ]
-{
-"78
-[; ;ADC.c: 78:         goto resul;
-[e $U 156  ]
-"79
-[; ;ADC.c: 79:     }
-}
-[e $U 158  ]
-"80
-[; ;ADC.c: 80:     else{
-[e :U 157 ]
-{
-"81
-[; ;ADC.c: 81:         ADCON0bits.ADON = 0;
-[e = . . _ADCON0bits 0 0 -> -> 0 `i `uc ]
-"82
-[; ;ADC.c: 82:         return ADRESH;
-[e ) _ADRESH ]
+"61
+[; ;ADC.c: 61:     return;
 [e $UE 138  ]
-"83
-[; ;ADC.c: 83:     }
-}
-[e :U 158 ]
-"84
-[; ;ADC.c: 84: }
+"62
+[; ;ADC.c: 62: }
 [e :UE 138 ]
 }

@@ -5,12 +5,13 @@
  * Created on 18 de julio de 2021
  */
 
-#ifndef ADC_H
-#define	ADC_H
+#ifndef XC_HEADER_TEMPLATE_H
+#define	XC_HEADER_TEMPLATE_H
 
-#include <xc.h> 
-#include <stdint.h>
+#pragma config FOSC = INTRC_NOCLKOUT
+#include <xc.h> // include processor files - each processor file is guarded.  
 
-uint8_t configADC(uint8_t ch);
+//defino el prototipo de la funcion
+void config_ADC(char frec); //tomara el valor que deseamos de la frecuencia
 
-#endif	/* ADC_H */
+#endif	/* XC_HEADER_TEMPLATE_H */

@@ -1,39 +1,28 @@
 #include <xc.h>
-#include <pic16f887.h>
 #include "USART.h"
 
-void _baudios(void){
-    SPBRG = 12; //9600 baudios para 8MHZ
-}
-//Configuracion dada en el datasheet
-void config_tx(void){
-    TXSTAbits.CSRC = 0;//Clock terminal
-    TXSTAbits.TX9 = 0;//8 bits de transmicion 
-    TXSTAbits.TXEN = 1;//Transmicion habilitada
-    TXSTAbits.SYNC = 0;//modo asincrono
-    TXSTAbits.BRGH = 0;//low speed
-    TXSTAbits.TRMT = 0;//Tsr full
-    TXSTAbits.TX9D = 0;
-}
-//Configuracion dada en el datasheet
-void config_rc(void){
-    RCSTAbits.SPEN = 1;//Se habilita el puerto serial 
-    RCSTAbits.RX9 = 0;
-    RCSTAbits.SREN = 0;
-    RCSTAbits.CREN = 1;//Recibir habilitadp 
-    RCREG = 0;  
-}
-void Write_USART(uint8_t a){
-    while(!TRMT);
-    TXREG=a;
-}
-void Write_USART_String(char *a){
-    uint8_t i;
-    for(i=0;a[i]!='\0';i++){
-        Write_USART(a[i]);
-    }
-}
-uint8_t Read_USART(){
-  while(!RCIF);
-  return RCREG;
+void conf_usart(void){
+//configurar transmisor y receptor asincrono
+    SPBRG = 103;         //para el baud rate de 9600
+    SPBRGH = 0;
+    BAUDCTLbits.BRG16 = 1; //8bits baud rate generator is used
+    TXSTAbits.BRGH = 1; //high speed
+    
+    TXSTAbits.SYNC = 0; //asincrono
+    //serial port enabled (Configures RX/DT and TX/CK pins as serial)
+    RCSTAbits.SPEN = 1; 
+    RCSTAbits.CREN = 1; //habilitar la recepcion
+    
+    TXSTAbits.TX9 = 0; //transmision de 8bits
+    TXSTAbits.TXEN = 1; //enable the transmission
+    RCSTAbits.RX9 = 0; //recepcion de 8 bits
+      
+    //PIE1bits.TXIE = 1; //porque quiero las interrupciones de la transmision
+    INTCONbits.GIE = 1; //enable de global interrupts
+    INTCONbits.PEIE = 1;
+    //PIE1bits.RCIE = 1; //interrupciones del receptor
+    PIR1bits.TXIF = 0;  //limpiar interrupciones
+    PIR1bits.RCIF = 0;
+    
+    return;
 }

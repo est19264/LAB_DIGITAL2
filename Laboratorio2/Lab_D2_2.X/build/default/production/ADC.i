@@ -2625,92 +2625,72 @@ typedef uint16_t uintptr_t;
 # 2 "ADC.c" 2
 
 # 1 "./ADC.h" 1
-# 12 "./ADC.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
-# 12 "./ADC.h" 2
+# 11 "./ADC.h"
+#pragma config FOSC = INTRC_NOCLKOUT
 
 
-uint8_t configADC(uint8_t ch);
+
+void config_ADC(char frec);
 # 3 "ADC.c" 2
 
 
 
 
-uint8_t configADC(uint8_t ch) {
-    ADCON0bits.ADCS = 1;
-    ADCON1 = 0;
 
-    switch (ch) {
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
+# 9 "ADC.c" 2
+
+
+
+
+
+void config_ADC(char frec) {
+    switch(frec){
         case 0:
-            ANSELbits.ANS0 = 1;
             ADCON0bits.CHS = 0;
+            _delay((unsigned long)((100)*(4000000/4000000.0)));
+
+            ADCON0bits.ADCS0 = 0;
+            ADCON0bits.ADCS1 = 0;
+            ADCON0bits.ADON = 1;
+            ADCON1bits.ADFM = 0;
+            ADCON1bits.VCFG1 = 0;
+            ADCON1bits.VCFG0 = 0;
             break;
         case 1:
-            ANSELbits.ANS1=1;
-            ADCON0bits.CHS=1;
+            ADCON0bits.CHS = 0;
+            _delay((unsigned long)((100)*(4000000/4000000.0)));
+
+            ADCON0bits.ADCS0 = 1;
+            ADCON0bits.ADCS1 = 0;
+            ADCON0bits.ADON = 1;
+            ADCON1bits.ADFM = 0;
+            ADCON1bits.VCFG1 = 0;
+            ADCON1bits.VCFG0 = 0;
             break;
         case 2:
-            ANSELbits.ANS2=1;
-            ADCON0bits.CHS=2;
+            ADCON0bits.CHS = 0;
+            _delay((unsigned long)((100)*(4000000/4000000.0)));
+
+            ADCON0bits.ADCS0 = 0;
+            ADCON0bits.ADCS1 = 1;
+            ADCON0bits.ADON = 1;
+            ADCON1bits.ADFM = 0;
+            ADCON1bits.VCFG1 = 0;
+            ADCON1bits.VCFG0 = 0;
             break;
         case 3:
-            ANSELbits.ANS3=1;
-            ADCON0bits.CHS=3;
-            break;
-        case 4:
-            ANSELbits.ANS4=1;
-            ADCON0bits.CHS=4;
-            break;
-        case 5:
-            ANSELbits.ANS5=1;
-            ADCON0bits.CHS=5;
-            break;
-        case 6:
-            ANSELbits.ANS6=1;
-            ADCON0bits.CHS=6;
-            break;
-        case 7:
-            ANSELbits.ANS7=1;
-            ADCON0bits.CHS=7;
-            break;
-        case 8:
-            ANSELHbits.ANS8=1;
-            ADCON0bits.CHS=8;
-            break;
-        case 9:
-            ANSELHbits.ANS9=1;
-            ADCON0bits.CHS=9;
-            break;
-        case 10:
-            ANSELHbits.ANS10=1;
-            ADCON0bits.CHS=10;
-            break;
-        case 11:
-            ANSELHbits.ANS11=1;
-            ADCON0bits.CHS=11;
-            break;
-        case 12:
-            ANSELHbits.ANS12=1;
-            ADCON0bits.CHS=12;
-            break;
-        case 13:
-            ANSELHbits.ANS13=1;
-            ADCON0bits.CHS=13;
-            break;
-        default:
-            return 0;
-    }
+            ADCON0bits.CHS = 0;
+            _delay((unsigned long)((100)*(4000000/4000000.0)));
 
-    ADCON0bits.ADON = 1;
-    _delay((unsigned long)((0.25)*(4000000/4000.0)));
-    ADCON0bits.GO = 1;
-
-    resul:
-    if (ADCON0bits.GO_DONE == 1){
-        goto resul;
+            ADCON0bits.ADCS0 = 1;
+            ADCON0bits.ADCS1 = 1;
+            ADCON0bits.ADON = 1;
+            ADCON1bits.ADFM = 0;
+            ADCON1bits.VCFG1 = 0;
+            ADCON1bits.VCFG0 = 0;
+            break;
     }
-    else{
-        ADCON0bits.ADON = 0;
-        return ADRESH;
-    }
+    return;
 }

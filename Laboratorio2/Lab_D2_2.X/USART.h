@@ -5,17 +5,11 @@
  * Created on 26 de julio de 2021
  */
 
-#ifndef USART_H
-#define	USART_H
+#ifndef xc_USART //definir nuevo nombre que el otro header para que no lo llame
+#define	xc_USART //dos veces
 
-#include <xc.h> 
-#include <stdint.h>
+#include <xc.h> // include processor files - each processor file is guarded.  
 
-void _baudios(void);
-void config_tx(void);
-void config_rc(void);
-void Write_USART(uint8_t a);
-void Write_USART_String(char *a);
-uint8_t Read_USART(void);
+void conf_usart(void);
 
-#endif	/* USART_H */
+#endif	/* XC_HEADER_TEMPLATE_H */
